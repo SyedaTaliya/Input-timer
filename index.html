@@ -1,24 +1,75 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
+
+
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Input CountDown Timer</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="X-UA-Compatible"
+content="ie=edge">
+
+<title>Input CountDown Timer</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
+
+
+
 <body>
-  <form>
-    Minutes: <input type="text" id="mns" name="mns" value="0" size="3" maxlength="3" /> &nbsp; &nbsp; Seconds: 
-    <input
-      type="text" id="scs" name="scs" value="0" size="2" maxlength="2"/><br />
-    <input type="button" id="btnct" value="START" onclick="countdownTimer()" />
-  </form>
-  Countdown Timer: &nbsp; <span id="showmns">00</span>:<span id="showscs">00</span>
+
+<h1>Input Timer</h1>
+
+<div id="countdown">
+    <div id="time">
+        <p id="showmns">00</p> &nbsp; <p id="showscs">00</p>
+    </div>
+
+</div>
+        
+<form>
+
+<div id="timeset">
+<label for="mns"> 
+    Minutes
+</label> 
+<input type="text"
+id="mns" name="mns"
+value="0" size="3"
+maxlength="3" /> 
+<label for="scs"> 
+    Seconds
+</label>
+<input type="text"
+id="scs" name="scs"
+value="0" size="2"
+maxlength="2" />
+</div>
+
+<div id="btn">
+<input type="button"
+id="btnct" value="START"
+onclick="countdownTimer()" />
+</div>
+
+</form>
 
 
-  <script src="script.js"></script>
+
+
+
+
+<script src="script.js"></script>
+
 </body>
+
+
+
 
 </html>
